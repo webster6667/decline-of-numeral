@@ -130,9 +130,9 @@ declineOfNumeral(2, ['минута', 'минуты', 'минут']) // => 'ми�
 declineOfNumeral(5, ['минута', 'минуты', 'минут']) // => 'минут'
 
 //en
-declineOfNumeral(1, ['cat', 'cats', 'cats']) // => 'cat'
-declineOfNumeral(2, ['cat', 'cats', 'cats']) // => 'cats'
-declineOfNumeral(5, ['cat', 'cats', 'cats']) // => 'cats'
+declineOfNumeral(1, ['cat', 'cats']) // => 'cat'
+declineOfNumeral(2, ['cat', 'cats']) // => 'cats'
+declineOfNumeral(5, ['cat', 'cats']) // => 'cats'
 ```
 
 

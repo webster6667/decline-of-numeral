@@ -16,14 +16,14 @@ import {DeclineOfNumeral} from './types'
  * declineOfNumeral(5, ['минута', 'минуты', 'минут']) // => 'минут'
  *
  * //en
- * declineOfNumeral(1, ['cat', 'cats', 'cats']) // => 'cat'
- * declineOfNumeral(2, ['cat', 'cats', 'cats']) // => 'cats'
- * declineOfNumeral(5, ['cat', 'cats', 'cats']) // => 'cats'
+ * declineOfNumeral(1, ['cat', 'cats']) // => 'cat'
+ * declineOfNumeral(2, ['cat', 'cats']) // => 'cats'
+ * declineOfNumeral(5, ['cat', 'cats']) // => 'cats'
  */
 const declineOfNumeral:DeclineOfNumeral = (quantity, arrayOfDeclinedWords) => {
     quantity = +quantity
 
-
+    if (arrayOfDeclinedWords.length === 2) arrayOfDeclinedWords.push(arrayOfDeclinedWords[1])
     
     if (isNaN(quantity)) throw new Error('type of quantity expect only number');
 

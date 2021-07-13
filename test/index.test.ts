@@ -48,7 +48,7 @@ describe('function return inclined word', () => {
 
     test('function return inclined first incline en word ', () => {
 
-        const arrayOfInclinedWords = ['cat', 'cats', 'cats'],
+        const arrayOfInclinedWords = ['cat', 'cats'],
               quantity = 1
 
         expect(declineOfNumeral(quantity, arrayOfInclinedWords)).toEqual(arrayOfInclinedWords[0])
@@ -56,7 +56,7 @@ describe('function return inclined word', () => {
 
     test('function return inclined second incline en word ', () => {
 
-        const arrayOfInclinedWords = ['cat', 'cats', 'cats'],
+        const arrayOfInclinedWords = ['cat', 'cats'],
               quantity = 2
 
         expect(declineOfNumeral(quantity, arrayOfInclinedWords)).toEqual(arrayOfInclinedWords[1])
@@ -64,10 +64,10 @@ describe('function return inclined word', () => {
 
     test('function return inclined third incline ru word ', () => {
 
-        const arrayOfInclinedWords = ['cat', 'cats', 'cats'],
+        const arrayOfInclinedWords = ['cat', 'cats'],
               quantity = 5
 
-        expect(declineOfNumeral(quantity, arrayOfInclinedWords)).toEqual(arrayOfInclinedWords[2])
+        expect(declineOfNumeral(quantity, arrayOfInclinedWords)).toEqual(arrayOfInclinedWords[1])
     });
 
 
