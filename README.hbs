@@ -4,7 +4,7 @@
 
 # decline-of-numeral
 
-> description
+> simple function for decline word
 
 [![npm version](https://badge.fury.io/js/decline-of-numeral.svg)](https://www.npmjs.com/package/decline-of-numeral)
 [![](https://data.jsdelivr.com/v1/package/npm/decline-of-numeral/badge)](https://www.jsdelivr.com/package/npm/decline-of-numeral)
@@ -89,7 +89,7 @@ Connect to html file ```<script src="https://cdn.jsdelivr.net/npm/decline-of-num
 
 ```html
 <script>
-    decliner.declineOfNumeral(1, ['минута', 'минуты', 'минут'])
+    declineOfNumeral(1, ['минута', 'минуты', 'минут'])
 </script>
 ```
 
@@ -101,8 +101,8 @@ decline-of-numeral as an AMD module. Use with Require.js, System.js, and so on.
 2. Connect to your module loader
 
 ```js
-requirejs(['decliner'], function(decliner) {
-    decliner.declineOfNumeral(1, ['минута', 'минуты', 'минут'])
+requirejs(['decline-of-numeral'], function(decliner) {
+    declineOfNumeral(1, ['минута', 'минуты', 'минут'])
 });
 ```
 

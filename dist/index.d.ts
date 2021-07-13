@@ -5,7 +5,7 @@ import { DeclineOfNumeral } from './types';
  *
  * @param {number | string} quantity - count of numeral
  * @param {string[]} arrayOfDeclinedWords - all variants of the declension of the word
- * @returns {}
+ * @returns {string}
  *
  * @example
  *
@@ -19,5 +19,5 @@ import { DeclineOfNumeral } from './types';
  * declineOfNumeral(2, ['cat', 'cats', 'cats']) // => 'cats'
  * declineOfNumeral(5, ['cat', 'cats', 'cats']) // => 'cats'
  */
-export declare const declineOfNumeral: DeclineOfNumeral;
+declare const declineOfNumeral: DeclineOfNumeral;
 export default declineOfNumeral;

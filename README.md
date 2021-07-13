@@ -4,7 +4,7 @@
 
 # decline-of-numeral
 
-> description
+> simple function for decline word
 
 [![npm version](https://badge.fury.io/js/decline-of-numeral.svg)](https://www.npmjs.com/package/decline-of-numeral)
 [![](https://data.jsdelivr.com/v1/package/npm/decline-of-numeral/badge)](https://www.jsdelivr.com/package/npm/decline-of-numeral)
@@ -16,6 +16,7 @@
   - [Install](#install)
   - [Initialization](#initialization)
 - [Methods](#methods)
+  - [declineOfNumeral](#declineOfNumeral)
 
 ## Quick start
 
@@ -86,7 +87,7 @@ Connect to html file ```<script src="https://cdn.jsdelivr.net/npm/decline-of-num
 
 ```html
 <script>
-    decliner.declineOfNumeral(1, ['минута', 'минуты', 'минут'])
+    declineOfNumeral(1, ['минута', 'минуты', 'минут'])
 </script>
 ```
 
@@ -99,11 +100,41 @@ decline-of-numeral as an AMD module. Use with Require.js, System.js, and so on.
 
 ```js
 requirejs(['decline-of-numeral'], function(decliner) {
-    decliner.declineOfNumeral(1, ['минута', 'минуты', 'минут'])
+    declineOfNumeral(1, ['минута', 'минуты', 'минут'])
 });
 ```
 
 ## Methods
+
+### declineOfNumeral
+
+function incline numeral word
+
+
+#### Params
+- `quantity`
+  - Type: `number,string`
+  - Description: count of numeral
+- `arrayOfDeclinedWords`
+  - Type: `Array.&lt;string&gt;`
+  - Description: all variants of the declension of the word
+
+#### Returns
+- `string`
+
+#### Example
+```JS
+//ru
+declineOfNumeral(1, ['минута', 'минуты', 'минут']) // => 'минута'
+declineOfNumeral(2, ['минута', 'минуты', 'минут']) // => 'минуты'
+declineOfNumeral(5, ['минута', 'минуты', 'минут']) // => 'минут'
+
+//en
+declineOfNumeral(1, ['cat', 'cats', 'cats']) // => 'cat'
+declineOfNumeral(2, ['cat', 'cats', 'cats']) // => 'cats'
+declineOfNumeral(5, ['cat', 'cats', 'cats']) // => 'cats'
+```
+
 
 
 ## Author

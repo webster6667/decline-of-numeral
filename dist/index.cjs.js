@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=function(e,r){if(e=+e,isNaN(e))throw new Error("type of quantity expect only number");return r[e%100>4&&e%100<20?2:[2,0,1,1,1,2][e%10<5?e%10:5]]};exports.declineOfNumeral=e,exports.default=e;
+"use strict";module.exports=function(t,e){if(t=+t,isNaN(t))throw new Error("type of quantity expect only number");return e[t%100>4&&t%100<20?2:[2,0,1,1,1,2][t%10<5?t%10:5]]};
