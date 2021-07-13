@@ -108,7 +108,7 @@ requirejs(['decline-of-numeral'], function(decliner) {
 
 ### declineOfNumeral
 
-function incline numeral word
+function decline numeral word
 
 
 #### Params

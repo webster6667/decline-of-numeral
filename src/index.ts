@@ -2,7 +2,7 @@ import {DeclineOfNumeral} from './types'
 
 /**
  * @description
- * function incline numeral word
+ * function decline numeral word
  *
  * @param {number | string} quantity - count of numeral
  * @param {string[]} arrayOfDeclinedWords - all variants of the declension of the word
