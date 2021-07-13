@@ -62,7 +62,7 @@ Recommended for production for avoiding unexpected breakage from newer versions:
 decline-of-numeral as an ES6 module.
 
 ```js
-import { declineOfNumeral } from 'decline-of-numeral';
+import declineOfNumeral from 'decline-of-numeral';
 
 declineOfNumeral(1, ['минута', 'минуты', 'минут'])
 
@@ -73,7 +73,7 @@ declineOfNumeral(1, ['минута', 'минуты', 'минут'])
 decline-of-numeral as a Node.js module
 
 ```js
-const { declineOfNumeral } = require('decline-of-numeral');
+const declineOfNumeral = require('decline-of-numeral');
 
 declineOfNumeral(1, ['минута', 'минуты', 'минут'])
 
